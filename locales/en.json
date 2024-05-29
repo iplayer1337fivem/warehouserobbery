@@ -1,0 +1,24 @@
+{
+    "notify": {
+        "cooldown": "Cooldown is active...",
+        "not_enough_police": "Not enough police are online...",
+        "already_hacked": "The system is already hacked...",
+        "dont_have_item": "You don`t have the required item...",
+        "failed": "You failed to hack the system...",
+        "item_removed": "The item was removed...",
+        "hacked": "You have successfully hacked the system!",
+        "entrance_closed": "The entrance is closed...",
+        "not_hacked": "The system is not hacked, what are you doing here boy?",
+        "successfully_searched": "You have successfully searched the box!",
+        "already_searched": "This box has already been searched..."
+    },
+    "progress": {
+        "searching_box": "Searching the box..."
+    },
+    "target": {
+        "hack_system": "Hack the system",
+        "search_box": "Search the box",
+        "exit_warehouse": "Exit the warehouse",
+        "enter_warehouse": "Enter the warehouse"
+    }
+}
