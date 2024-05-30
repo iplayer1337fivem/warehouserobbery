@@ -12,6 +12,7 @@
 ## Dependencies
 - [qbx_core](https://github.com/Qbox-project/qbx_core/releases), [qb-core](https://github.com/qbcore-framework/qb-corev) or [es_extended](https://github.com/esx-framework/esx_core/tree/main/%5Bcore%5D/es_extended)
 - [ox_lib](https://github.com/overextended/ox_lib/releases)
+- [ox_inventory](https://github.com/overextended/ox_inventory/releases)
 - [ox_target](https://github.com/overextended/ox_target/releases),
 - [ultra-voltlab](https://github.com/ultrahacx/ultra-voltlab/releases),
 

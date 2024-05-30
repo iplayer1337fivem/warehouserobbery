@@ -18,7 +18,6 @@ server_scripts {
 }
 
 client_scripts { 
-    'bridge/client.lua',
     'client/*.lua'
 }
 
