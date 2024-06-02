@@ -12,12 +12,13 @@ shared_scripts {
 }
 
 server_scripts { 
-    '@oxmysql/lib/MySQL.lua',
-    'bridge/server.lua',
+    'bridge/server/*.lua',
     'server/*.lua' 
 }
 
 client_scripts { 
+    '@qbx_core/modules/playerdata.lua', -- Comment this line if you are not using Qbox
+    'bridge/client/*.lua',
     'client/*.lua'
 }
 

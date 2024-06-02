@@ -3,7 +3,7 @@ local sharedConfig = require 'config.shared'
 local serverConfig = require 'config.server'
 local electricalBoxId = 'electrical_box' -- Do not touch this
 
-local function spawnBoxes()
+function spawnBoxes()
     for i = 1, #config.boxLocations do
         local coord = config.boxLocations[i].coords
         local model = joaat(config.warehouseObjects[math.random(1, #config.warehouseObjects)])
@@ -86,7 +86,6 @@ local function enterWarehouse()
     if isBusy then
         DoScreenFadeOut(500)
         Wait(1000)
-        spawnBoxes()
         SetEntityCoords(cache.ped, config.warehouseInterior)
         SetEntityHeading(cache.ped, 266.59)
         DoScreenFadeIn(500)

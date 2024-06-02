@@ -90,7 +90,7 @@ end)
     
   
 lib.callback.register('warehouserobbery:server:getPoliceCount', function()
-    local policeCount = PlayersWithJob('police')
+    local policeCount = CheckCopCount()
     return policeCount or 0
 end)
 
