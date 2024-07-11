@@ -1,15 +1,19 @@
+local utils = {}
 local config = require 'config.client'
 
 if GetResourceState('es_extended') == 'started' then
     ESX = exports['es_extended']:getSharedObject()
 elseif GetResourceState('qb-core') == 'started' then
     QBCore = exports['qb-core']:GetCoreObject()
+elseif GetResourceState('ND_Core') ~= 'started' then
+    NDCore = exports['ND_Core']
 else
     return
 end
 
-
-function Notify(message, type)
+--- @param message string
+--- @param type string
+function utils.notify(message, type)
     if config.notify == 'ox_lib' then
         lib.notify({ description = message, type = type, position = 'top' })
     elseif config.notify == 'esx' then
@@ -18,12 +22,15 @@ function Notify(message, type)
         QBCore.Functions.Notify(message, type)
     elseif config.notify == 'qbox' then
         exports.qbx_core:Notify(message, type)
+    elseif config.notify == 'nd' then
+        NDCore:notify({ title = message, type = type })
     elseif config.notify == 'custom' then
         -- Add your custom notification system here
     end
 end
 
-function PoliceDispatch(data)
+--- @param data table
+function utils.policeDispatch(data)
     if config.dispatch == 'cd_dispatch' then
         local data = exports.cd_dispatch:GetPlayerInfo()
         TriggerServerEvent('cd_dispatch:AddNotification', {
@@ -52,3 +59,5 @@ function PoliceDispatch(data)
         lib.print.error('No dispatch system was found - please update your config')
     end
 end
+
+return utils

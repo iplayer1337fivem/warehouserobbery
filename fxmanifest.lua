@@ -3,7 +3,9 @@ game 'gta5'
 
 author 'KostaZ'
 description 'Advanced Warehouse Robbery for Qbox, QBCore and ESX'
-version '1.0.0'
+version '2.0.0'
+
+lua54 'yes'
 
 ox_lib 'locale'
 
@@ -19,12 +21,14 @@ server_scripts {
 client_scripts { 
     '@qbx_core/modules/playerdata.lua', -- Comment this line if you are not using Qbox
     'bridge/client/*.lua',
-    'client/*.lua'
+    'client/main.lua'
 }
 
 files {
     'config/*.lua',
-    'locales/*.json'
+    'locales/*.json',
+    'client/utils.lua',
+    'server/utils.lua'
 }
 
 dependencies {
@@ -32,4 +36,4 @@ dependencies {
     'ultra-voltlab'
 }
 
-lua54 'yes'
+

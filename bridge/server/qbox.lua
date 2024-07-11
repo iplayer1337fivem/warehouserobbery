@@ -1,5 +1,6 @@
 if GetResourceState('qbx_core') ~= 'started' then return end
 
+--- @param source integer
 function GetPlayer(source)
     if not source then return end
 

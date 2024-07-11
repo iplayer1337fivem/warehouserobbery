@@ -2,6 +2,7 @@ if GetResourceState('qb-core') ~= 'started' then return end
 
 local QBCore = exports['qb-core']:GetCoreObject()
 
+--- @param source integer
 function GetPlayer(source)
     if not source then return end
 
