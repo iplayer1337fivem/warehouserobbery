@@ -1,0 +1,31 @@
+{
+    "notify": {
+        "cooldown": "Cooldown er aktiv...",
+        "not_enough_police": "Ikke nok politi er online...",
+        "already_blown": "El-boksen er allerede sprunget i luften...",
+        "dont_have_item": "Du har ikke den nødvendige genstand...",
+        "failed": "Du fejlede i at hacke systemet...",
+        "item_removed": "Genstanden blev fjernet...",
+        "c4_placed": "C4 er blevet placeret, træk dig tilbage!",
+        "gate_unlocked": "Porten er blevet låst op",
+        "entrance_closed": "Indgangen er lukket...",
+        "not_hacked": "Systemet er ikke hacket, hvad laver du her dreng?",
+        "successfully_searched": "Du har succesfuldt gennemsøgt boksen!",
+        "already_searched": "Denne boks er allerede blevet gennemsøgt...",
+        "exit_locked": "Udgangen er låst...",
+        "successfully_locked": "Du har succesfuldt låst indgangen",
+        "successfully_hacked": "Du har succesfuldt hacket laptoppen",
+        "failed_hack": "Du har fejlet i at hacke laptoppen...",
+        "already_hacked": "Laptoppen er allerede blevet hacket..."
+    },
+    "progress": {
+        "searching_box": "Gennemsøger boksen...",
+        "placing_c4": "Placerer C4..."
+    },
+    "interaction": {
+        "place_c4": "Placer C4",
+        "search_box": "Gennemsøg boksen",
+        "exit_warehouse": "Forlad lageret",
+        "enter_warehouse": "Gå ind i lageret"
+    }
+}

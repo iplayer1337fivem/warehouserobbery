@@ -22,6 +22,6 @@ return {
         name = 'Warehouse Robbery', -- Name for the webhook
         image = '', -- Image for the webhook
         footer = '', -- Footer image for the webhook
-        webhookURL = 'https://discord.com/api/webhooks/941330087222063155/9Nxpd6hFWIVun6DgQzp3s6MQ4zQWcQMx0hZenAtGuf6FNBRkRFm-H0KZ-rsvY-Fg2SE4'
+        webhookURL = 'https://discord.com/api/webhooks/1260967635357667400/f28U_LrfM8R2T_oBJBqeaTt1K_48xBtHs6p_7DMcguQ8PAWz0tgD4wVkmeQRc0cBo3vn'
     }
 }
